@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "noEmit": true,
+    "isolatedDeclarations": false,
+    "paths": {
+      "quick-di": ["./src/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts"]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "quick-di",
+  "version": "1.0.0",
+  "description": "Quick, minimal dependency injection. Class tokens, inject(), no decorators — Node, Bun, Deno, browser.",
+  "keywords": [
+    "dependency-injection",
+    "di",
+    "inject",
+    "ioc",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "n0tz3r0",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest run",
+    "prepack": "pnpm build",
+    "dev": "tsdown --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsdown": "^0.23.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.6.0",
+      "onFail": "ignore"
+    }
+  },
+  "packageManager": "pnpm@12.6.0"
+}
